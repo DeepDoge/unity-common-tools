@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-namespace Game
+namespace Common.Tools
 {
     public static class Overwrites
     {

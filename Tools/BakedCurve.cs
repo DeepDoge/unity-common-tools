@@ -4,7 +4,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Game.Util
+namespace Common.Tools
 {
     public partial struct BakedCurve : IDisposable
     {
