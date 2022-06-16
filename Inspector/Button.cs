@@ -1,11 +1,11 @@
-using UnityEditor;
 using UnityEngine;
 #if UNITY_EDITOR
+using UnityEditor;
 #endif
 
 namespace Common.Inspector
 {
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(ButtonAttribute))]
     public class ButtonDrawer : PropertyDrawer
     {
@@ -30,7 +30,7 @@ namespace Common.Inspector
             }
         }
     }
-#endif
+    #endif
 
     public class ButtonAttribute : PropertyAttribute
     {

@@ -1,4 +1,6 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace Common.Inspector
@@ -7,7 +9,7 @@ namespace Common.Inspector
     {
  
     }
- 
+#if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(ReadOnlyFieldAttribute))]
     public class ReadOnlyFieldDrawer : PropertyDrawer
     {
@@ -26,4 +28,5 @@ namespace Common.Inspector
             GUI.enabled = true;
         }
     }
+#endif
 }
